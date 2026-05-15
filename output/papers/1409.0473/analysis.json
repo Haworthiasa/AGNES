@@ -1,7 +1,0 @@
-{
-  "problem": "",
-  "architecture": "{\"encoder\": \"Bidirectional RNN (biRNN) with forward and backward recurrent neural networks (GRU-based). Each word x_j is encoded into an annotation h_j = [\\u2192h_j; \\u2190h_j] concatenating the forward and backward hidden states, capturing context from both directions.\", \"decoder\": \"Recurrent neural network (GRU) with attention. At each step i, it computes a context vector c_i = \\u03a3_j \\u03b1_{ij} h_j, where \\u03b1_{ij} is a soft weight from an alignment model. The probability of target word y_i is conditional on the previous word y_{i-1}, decoder state s_i, and context c_i.\", \"alignment_model\": \"Feedforward neural network a(s_{i-1}, h_j) = v_a^T tanh(W_a s_{i-1} + U_a h_j). The outputs e_{ij} are normalized via softmax to produce attention weights \\u03b1_{ij}.\", \"output_layer\": \"A maxout hidden layer followed by a softmax to compute the probability of the next target word.\"}",
-  "math": "",
-  "results": "",
-  "one_sentence": ""
-}

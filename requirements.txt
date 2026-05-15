@@ -1,0 +1,10 @@
+langchain
+langchain-community
+langchain-openai
+langgraph
+langsmith
+arxiv
+pypdf
+python-dotenv
+requests
+certifi
